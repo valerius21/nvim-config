@@ -1,3 +1,5 @@
+local Util = require("lazyvim.util")
+
 return {
   {
     "nvim-telescope/telescope.nvim",
@@ -8,6 +10,11 @@ return {
         "<leader>fp",
         function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
         desc = "Find Plugin File",
+      },
+      {
+        "<leader>p",
+        Util.telescope("live_grep"),
+        desc = "Grep (root dir)",
       },
     },
     -- change some options
