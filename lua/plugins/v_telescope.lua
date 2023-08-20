@@ -16,6 +16,11 @@ return {
         Util.telescope("live_grep"),
         desc = "Grep (root dir)",
       },
+      -- deactivate the default keymap for telescope-grep
+      {
+        "<leader>/",
+        false,
+      },
     },
     -- change some options
     opts = {

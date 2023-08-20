@@ -1,27 +1,21 @@
 return {
-  -- disable existing comment plugin
   {
     "echasnovski/mini.comment",
-    enabled = false,
-  },
-  -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
-  {
-    "numToStr/Comment.nvim",
-    lazy = false,
-    keys = {
-      {
-        "<leader>/",
-        function()
-          require("Comment.api").toggle.linewise.count(vim.v.count > 0 and vim.v.count or 1)
-        end,
-        "n",
-        { desc = "Toggle comment line" },
+    enabled = true,
+    opts = {
+      -- Module mappings. Use `''` (empty string) to disable one.
+      mappings = {
+        -- Toggle comment (like `gcip` - comment inner paragraph) for both
+        -- Normal and Visual modes
+        comment = "<leader>/",
+
+        -- Toggle comment on current line
+        comment_line = "<leader>/",
       },
-      {
-        "<leader>/",
-        "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>",
-        "v",
-        { desc = "Toggle comment for selection" },
+      options = {
+        custom_commentstring = function()
+          return require("ts_context_commentstring.internal").calculate_commentstring() or vim.bo.commentstring
+        end,
       },
     },
   },
