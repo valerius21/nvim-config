@@ -9,7 +9,3 @@
 -- end, {
 --   desc = "Toggle comment line",
 -- })
-
-vim.keymap.set("v", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<cr>", {
-  desc = "Toggle comment for selection",
-})
