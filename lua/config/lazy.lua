@@ -11,8 +11,7 @@ require("lazy").setup({
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
-    { import = "lazyvim.plugins.extras.ui.mini-animate" }, -- TODO: move to external file
-    { import = "lazyvim.plugins.extras.coding.copilot" }, -- TODO: move to external file
+    -- { import = "lazyvim.plugins.extras.coding.copilot" },
     -- import/override with your plugins
     { import = "plugins" },
   },
