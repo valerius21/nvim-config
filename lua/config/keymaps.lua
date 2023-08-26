@@ -5,3 +5,7 @@
 -- TODO: move this into an autocommand after null-ls finishes formatting?
 vim.api.nvim_set_keymap("n", "<leader>tyt", "<cmd>TypescriptAddMissingImports<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>tyr", "<cmd>TypescriptRemoveUnused<cr>", { noremap = true, silent = true })
+
+-- TODO: only run on rust files
+--
+--vim.api.nvim_set_keymap("n", "<leader>rr", "<cmd>RustRun<cr>", { noremap = true, silent = true })

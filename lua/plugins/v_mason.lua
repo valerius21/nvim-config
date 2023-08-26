@@ -12,6 +12,7 @@ return {
         "prettierd",
         "eslint_d",
         "eslint-lsp",
+        "rust-analyzer",
       },
     },
   },

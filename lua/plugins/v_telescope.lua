@@ -17,6 +17,7 @@ return {
         desc = "Grep (root dir)",
       },
       -- deactivate the default keymap for telescope-grep
+      --
       {
         "<leader>/",
         false,

@@ -3,6 +3,13 @@
 See [documentation](https://lazyvim.github.io/installation) for LazyVim .
 Feel free to make recommendations, fork, etc.
 
+## Todos
+
+- [ ] add other dotfiles to it
+  - [ ] tmux
+  - [ ] alacritty
+  - [ ] ( kitty )
+
 ## `/plugins`
 
 See the example for configuration options. Fragments may be found in `plugins/x_etc.lua`
