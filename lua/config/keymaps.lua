@@ -8,4 +8,10 @@ vim.api.nvim_set_keymap("n", "<leader>tyr", "<cmd>TypescriptRemoveUnused<cr>", {
 
 -- TODO: only run on rust files
 --
---vim.api.nvim_set_keymap("n", "<leader>rr", "<cmd>RustRun<cr>", { noremap = true, silent = true })
+--vim.api.nvim_set_keymap("n", "<leader>rr", "<cmd>RustRun<cr>", { noremap = true, silent = {noremap = true, silent = true}mux
+
+--Tmux
+vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { noremap = true, silent = true })
