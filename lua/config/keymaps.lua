@@ -15,3 +15,6 @@ vim.api.nvim_set_keymap("n", "<C-h>", "<cmd>TmuxNavigateLeft<cr>", { noremap = t
 vim.api.nvim_set_keymap("n", "<C-l>", "<cmd>TmuxNavigateRight<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-j>", "<cmd>TmuxNavigateDown<cr>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-k>", "<cmd>TmuxNavigateUp<cr>", { noremap = true, silent = true })
+
+-- Toggle terminal
+vim.api.nvim_set_keymap("n", "<C-/>", "<cmd>ToggleTerm<cr>", { noremap = true, silent = true })
