@@ -13,6 +13,7 @@ require("lazy").setup({
     -- import any extras modules here
     -- { import = "lazyvim.plugins.extras.coding.copilot" },
     -- import/override with your plugins
+    { import = "lazyvim.plugins.extras.test.core" },
     { import = "plugins" },
   },
   defaults = {
