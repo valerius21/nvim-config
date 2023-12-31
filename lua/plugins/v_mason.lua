@@ -8,10 +8,9 @@ return {
         "shellcheck",
         "shfmt",
         "flake8",
-        "prettier",
         "prettierd",
-        "eslint_d",
         "eslint-lsp",
+        "typescript-language-server", -- DOC recommendation from his NextJS video
         "rust-analyzer",
       },
     },

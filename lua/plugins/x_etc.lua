@@ -49,5 +49,6 @@ return {
   },
 
   -- use mini.starter instead of alpha
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
+
+  --{ import = "lazyvim.plugins.extras.ui.mini-starter" },
 }
